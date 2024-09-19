@@ -28,7 +28,6 @@ public class Eraser extends ProductObject {
 
     @Override
     public boolean equals(Object obj) {
-        System.out.println("добавляю изменения");
         if (obj == null) return false;
         if (this == obj) return true;
         if (obj instanceof Eraser) {
@@ -44,6 +43,5 @@ public class Eraser extends ProductObject {
         hash = 37 * hash + this.eId;
         hash = 37 * hash + (this.type != null ? this.type.hashCode() : 0);
         return hash;
-
     }
 }
