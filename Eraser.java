@@ -23,6 +23,7 @@ public class Eraser extends ProductObject {
 
     @Override
     public String toString() {
+        System.out.println("добавляю изменения");
         return super.toString() + "_Тип:" + type;
     }
 
